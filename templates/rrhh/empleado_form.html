@@ -30,7 +30,13 @@
             <div class="col-md-4"><label class="form-label">Usuario del sistema</label>{{ form.usuario }}</div>
           </div>
           {% if form.non_field_errors %}<div class="alert alert-danger mt-3">{{ form.non_field_errors }}</div>{% endif %}
-          <div class="d-flex gap-2 mt-4">
+          {% if form.errors %}
+          <div class="alert alert-warning mt-3">
+              {% for field, errors in form.errors.items %}
+                  <div><strong>{{ field }}:</strong> {{ errors }}</div>
+              {% endfor %}
+          </div>
+          {% endif %}          <div class="d-flex gap-2 mt-4">
             <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Guardar</button>
             <a href="{% url 'rrhh_app:empleado-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
           </div>

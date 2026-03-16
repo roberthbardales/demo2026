@@ -1,0 +1,41 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Comprobantes{% endblock %}
+{% block page_title %}Comprobantes{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <span><i class="bi bi-receipt me-2"></i>Comprobantes</span>
+    <a href="{% url 'ventas_app:reporte-comprobantes-excel' %}" class="btn btn-outline-success btn-sm"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2 align-items-end">
+      <div class="col-md-3">{{ form_filtro.tipo }}</div>
+      <div class="col-md-4">{{ form_filtro.cliente }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_inicio }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_fin }}</div>
+      <div class="col-auto"><button type="submit" class="btn btn-mod btn-sm">Filtrar</button></div>
+    </form>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Comprobante</th><th>Cliente</th><th>Fecha</th><th>Subtotal</th><th>IGV</th><th>Total</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+        {% for c in comprobantes %}
+        <tr>
+          <td><a href="{% url 'ventas_app:comprobante-detalle' c.pk %}" class="text-decoration-none fw-500">{{ c }}</a></td>
+          <td style="font-size:.85rem;">{{ c.cliente.nombre|truncatechars:25 }}</td>
+          <td style="font-size:.82rem;color:#888;">{{ c.fecha_emision|date:"d/m/Y" }}</td>
+          <td>S/ {{ c.subtotal }}</td>
+          <td>S/ {{ c.igv }}</td>
+          <td class="fw-bold">S/ {{ c.total }}</td>
+          <td>{% if c.estado == 'E' %}<span class="badge bg-success-subtle text-success">Emitido</span>{% else %}<span class="badge bg-secondary-subtle text-secondary">Anulado</span>{% endif %}</td>
+          <td>
+            <a href="{% url 'ventas_app:comprobante-pdf' c.pk %}" class="btn btn-sm btn-outline-danger" title="PDF"><i class="bi bi-file-pdf"></i></a>
+          </td>
+        </tr>
+        {% empty %}<tr><td colspan="8" class="text-center text-muted py-5">Sin comprobantes.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+</div>
+{% endblock %}

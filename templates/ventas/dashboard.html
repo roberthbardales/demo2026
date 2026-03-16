@@ -1,0 +1,101 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Dashboard Ventas{% endblock %}
+{% block page_title %}Dashboard Ventas{% endblock %}
+
+{% block content %}
+<div class="row g-3 mb-4">
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fde8e8;color:#c0392b;"><i class="bi bi-cart3"></i></div>
+            <div><div class="stat-label">Pedidos del Mes</div><div class="stat-value">{{ total_pedidos_mes }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e6f7f2;color:#108260;"><i class="bi bi-currency-dollar"></i></div>
+            <div><div class="stat-label">Ventas del Mes</div><div class="stat-value" style="font-size:1.2rem;">S/ {{ total_ventas_mes|floatformat:2 }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fff3cd;color:#856404;"><i class="bi bi-clock-history"></i></div>
+            <div><div class="stat-label">Pedidos Pendientes</div><div class="stat-value">{{ pedidos_pendientes }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e8f1fb;color:#1e6fbf;"><i class="bi bi-people"></i></div>
+            <div><div class="stat-label">Clientes</div><div class="stat-value">{{ total_clientes }}</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-cart3 me-2"></i>Pedidos Recientes</span>
+                <a href="{% url 'ventas_app:pedido-lista' %}" class="btn btn-sm btn-outline-secondary">Ver todos</a>
+            </div>
+            <div class="card-body p-0"><div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead><tr><th>Numero</th><th>Cliente</th><th>Fecha</th><th>Total</th><th>Estado</th><th></th></tr></thead>
+                    <tbody>
+                        {% for p in pedidos_recientes %}
+                        <tr>
+                            <td><code>{{ p.numero }}</code></td>
+                            <td style="font-size:.85rem;">{{ p.cliente.nombre|truncatechars:25 }}</td>
+                            <td style="font-size:.82rem;color:#888;">{{ p.fecha|date:"d/m/Y" }}</td>
+                            <td>S/ {{ p.total }}</td>
+                            <td>
+                                {% if p.estado == 'P' %}<span class="badge badge-pendiente">Pendiente</span>
+                                {% elif p.estado == 'C' %}<span class="badge badge-confirmado">Confirmado</span>
+                                {% elif p.estado == 'E' %}<span class="badge badge-entregado">Entregado</span>
+                                {% else %}<span class="badge badge-anulado">Anulado</span>{% endif %}
+                            </td>
+                            <td><a href="{% url 'ventas_app:pedido-detalle' p.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-eye"></i></a></td>
+                        </tr>
+                        {% empty %}
+                        <tr><td colspan="6" class="text-center text-muted py-4">Sin pedidos registrados.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div></div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header"><i class="bi bi-receipt me-2"></i>Comprobantes Recientes</div>
+            <div class="card-body p-0"><div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead><tr><th>Comprobante</th><th>Total</th></tr></thead>
+                    <tbody>
+                        {% for c in comprobantes_recientes %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'ventas_app:comprobante-detalle' c.pk %}" class="text-decoration-none" style="font-size:.85rem;">{{ c }}</a>
+                                <div style="font-size:.75rem;color:#888;">{{ c.fecha_emision|date:"d/m/Y" }}</div>
+                            </td>
+                            <td>S/ {{ c.total }}</td>
+                        </tr>
+                        {% empty %}
+                        <tr><td colspan="2" class="text-center text-muted py-3">Sin comprobantes.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Acciones rapidas</div>
+            <div class="card-body d-flex flex-column gap-2">
+                <a href="{% url 'ventas_app:pedido-nuevo' %}" class="btn btn-mod"><i class="bi bi-plus-circle me-1"></i>Nuevo Pedido</a>
+                <a href="{% url 'ventas_app:cliente-nuevo' %}" class="btn btn-outline-secondary"><i class="bi bi-person-plus me-1"></i>Nuevo Cliente</a>
+                <a href="{% url 'ventas_app:reporte-pedidos-excel' %}" class="btn btn-outline-success"><i class="bi bi-file-earmark-excel me-1"></i>Excel Pedidos</a>
+                <a href="{% url 'ventas_app:reporte-comprobantes-excel' %}" class="btn btn-outline-danger"><i class="bi bi-file-earmark-excel me-1"></i>Excel Comprobantes</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

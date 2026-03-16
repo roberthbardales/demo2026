@@ -1,0 +1,54 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}{{ comprobante }}{% endblock %}
+{% block page_title %}Detalle de Comprobante{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="fw-bold mb-1" style="color:#c0392b;">{{ comprobante.get_tipo_display|upper }}</h5>
+        <div class="text-muted mb-3">{{ comprobante.numero_completo }}</div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Estado</span>
+          {% if comprobante.estado == 'E' %}<span class="badge bg-success">Emitido</span>{% else %}<span class="badge bg-secondary">Anulado</span>{% endif %}
+        </div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Cliente</span><span class="small fw-500">{{ comprobante.cliente.nombre }}</span></div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Vendedor</span><span class="small">{{ comprobante.vendedor.full_name }}</span></div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Fecha</span><span class="small">{{ comprobante.fecha_emision|date:"d/m/Y" }}</span></div>
+        <hr>
+        <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Subtotal</span><span>S/ {{ comprobante.subtotal }}</span></div>
+        <div class="d-flex justify-content-between mb-1"><span class="text-muted small">IGV (18%)</span><span>S/ {{ comprobante.igv }}</span></div>
+        <div class="d-flex justify-content-between"><span class="fw-bold">TOTAL</span><span class="fw-bold" style="color:#c0392b;font-size:1.1rem;">S/ {{ comprobante.total }}</span></div>
+        <div class="d-flex flex-column gap-2 mt-3">
+          <a href="{% url 'ventas_app:comprobante-pdf' comprobante.pk %}" class="btn btn-mod btn-sm"><i class="bi bi-file-pdf me-1"></i>Descargar PDF</a>
+          {% if comprobante.estado == 'E' %}
+          <a href="{% url 'ventas_app:comprobante-anular' comprobante.pk %}" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Anular</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-box-seam me-2"></i>Detalle</div>
+      <div class="card-body p-0"><div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead><tr><th>Descripcion</th><th>Cant.</th><th>P. Unit.</th><th>Desc.</th><th>Subtotal</th></tr></thead>
+          <tbody>
+            {% for d in detalles %}
+            <tr>
+              <td>{{ d.descripcion }}</td>
+              <td>{{ d.cantidad }}</td>
+              <td>S/ {{ d.precio_unitario }}</td>
+              <td>{{ d.descuento }}%</td>
+              <td>S/ {{ d.subtotal }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5" class="text-center text-muted py-4">Sin detalle.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -106,6 +106,12 @@ class InventarioMixin(BasePermisoMixin):
 
     solo_lectura = True
 
+# Ventas
+class VentasMixin(BasePermisoMixin):
+    occupations_permitidas = [
+        User.ADMIN,
+        User.VENTAS,
+    ]
 
 # Usuarios
 class UsuarioListaMixin(BasePermisoMixin):

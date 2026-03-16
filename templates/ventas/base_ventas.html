@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+<style>
+    :root {
+        --mod-color: #c0392b;
+        --mod-light: #fde8e8;
+    }
+    .btn-mod { background: var(--mod-color); color: #fff; border: none; }
+    .btn-mod:hover { background: #a93226; color: #fff; }
+    .table thead th { color: var(--mod-color) !important; }
+    .breadcrumb-item a { color: var(--mod-color); text-decoration: none; }
+    .badge-pendiente { background: #fff3cd; color: #856404; }
+    .badge-confirmado { background: #e8f1fb; color: #1e6fbf; }
+    .badge-entregado { background: #e6f7f2; color: #108260; }
+    .badge-anulado { background: #f0f0f0; color: #666; }
+</style>
+{% endblock %}

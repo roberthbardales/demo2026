@@ -1,0 +1,133 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Nuevo Pedido{% endblock %}
+{% block page_title %}Nuevo Pedido{% endblock %}
+
+{% block extra_css %}
+{{ block.super }}
+<style>
+.formset-row { background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 8px; }
+.formset-row .delete-row { cursor: pointer; color: #dc3545; }
+</style>
+{% endblock %}
+
+{% block content %}
+<form method="post" id="pedido-form">{% csrf_token %}
+<div class="row g-4">
+  <!-- Datos del pedido -->
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-info-circle me-2"></i>Datos del Pedido</div>
+      <div class="card-body">
+        <div class="mb-3"><label class="form-label">Cliente *</label>{{ form.cliente }}{% if form.cliente.errors %}<div class="text-danger small">{{ form.cliente.errors.0 }}</div>{% endif %}</div>
+        <div class="mb-3"><label class="form-label">Fecha *</label>{{ form.fecha }}</div>
+        <div class="mb-3"><label class="form-label">Observaciones</label>{{ form.observaciones }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detalle de productos -->
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="bi bi-box-seam me-2"></i>Productos</span>
+        <button type="button" class="btn btn-outline-primary btn-sm" id="add-row"><i class="bi bi-plus-lg me-1"></i>Agregar</button>
+      </div>
+      <div class="card-body">
+        {{ formset.management_form }}
+        <div id="formset-container">
+          {% for f in formset %}
+          <div class="formset-row" id="row-{{ forloop.counter0 }}">
+            <div class="row g-2 align-items-end">
+              <div class="col-md-4">
+                <label class="form-label" style="font-size:.8rem;">Producto</label>
+                {{ f.producto }}
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" style="font-size:.8rem;">Cantidad</label>
+                {{ f.cantidad }}
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" style="font-size:.8rem;">P. Unit.</label>
+                {{ f.precio_unitario }}
+              </div>
+              <div class="col-md-2">
+                <label class="form-label" style="font-size:.8rem;">Desc. %</label>
+                {{ f.descuento }}
+              </div>
+              <div class="col-md-1">
+                {{ f.DELETE }}
+                <label class="form-label" style="font-size:.8rem;">Eliminar</label>
+              </div>
+            </div>
+            {% if f.errors %}
+            <div class="text-danger small mt-1">{{ f.errors }}</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- Totales -->
+        <div class="mt-3 pt-3 border-top">
+          <div class="d-flex justify-content-end">
+            <table style="font-size:.9rem;">
+              <tr><td class="text-muted pe-4">Subtotal:</td><td class="fw-500" id="subtotal">S/ 0.00</td></tr>
+              <tr><td class="text-muted pe-4">IGV (18%):</td><td class="fw-500" id="igv">S/ 0.00</td></tr>
+              <tr><td class="fw-bold pe-4">TOTAL:</td><td class="fw-bold" style="color:#c0392b;font-size:1.1rem;" id="total">S/ 0.00</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex gap-2 mt-3">
+      <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Crear Pedido</button>
+      <a href="{% url 'ventas_app:pedido-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+    </div>
+  </div>
+</div>
+</form>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Calcular totales dinámicamente
+function calcularTotales() {
+    let subtotal = 0;
+    document.querySelectorAll('.formset-row').forEach(row => {
+        const deleteCheck = row.querySelector('input[type=checkbox]');
+        if (deleteCheck && deleteCheck.checked) return;
+        const cant = parseFloat(row.querySelector('[name$="-cantidad"]')?.value) || 0;
+        const precio = parseFloat(row.querySelector('[name$="-precio_unitario"]')?.value) || 0;
+        const desc = parseFloat(row.querySelector('[name$="-descuento"]')?.value) || 0;
+        subtotal += cant * precio * (1 - desc / 100);
+    });
+    const igv = subtotal * 0.18;
+    const total = subtotal + igv;
+    document.getElementById('subtotal').textContent = `S/ ${subtotal.toFixed(2)}`;
+    document.getElementById('igv').textContent = `S/ ${igv.toFixed(2)}`;
+    document.getElementById('total').textContent = `S/ ${total.toFixed(2)}`;
+}
+
+document.getElementById('formset-container').addEventListener('input', calcularTotales);
+
+// Agregar fila
+document.getElementById('add-row').addEventListener('click', () => {
+    const totalForms = document.getElementById('id_detalles-TOTAL_FORMS');
+    const idx = parseInt(totalForms.value);
+    const firstRow = document.querySelector('.formset-row');
+    if (!firstRow) return;
+    const newRow = firstRow.cloneNode(true);
+    newRow.id = `row-${idx}`;
+    newRow.querySelectorAll('input, select').forEach(el => {
+        el.name = el.name.replace(/-\d+-/, `-${idx}-`);
+        el.id = el.id.replace(/-\d+-/, `-${idx}-`);
+        if (el.type !== 'checkbox') el.value = '';
+        else el.checked = false;
+    });
+    document.getElementById('formset-container').appendChild(newRow);
+    totalForms.value = idx + 1;
+});
+
+calcularTotales();
+</script>
+{% endblock %}

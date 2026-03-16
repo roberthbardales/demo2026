@@ -1,0 +1,44 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Clientes{% endblock %}
+{% block page_title %}Clientes{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-people me-2"></i>Clientes</span>
+    <a href="{% url 'ventas_app:cliente-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Cliente</a>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2">
+      <div class="col-md-6"><input type="text" name="q" value="{{ request.GET.q }}" class="form-control form-control-sm" placeholder="Buscar por nombre o documento..."></div>
+      <div class="col-auto"><button type="submit" class="btn btn-mod btn-sm">Buscar</button></div>
+    </form>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Nombre</th><th>Tipo</th><th>Documento</th><th>Telefono</th><th>Email</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+        {% for c in clientes %}
+        <tr>
+          <td class="fw-500">{{ c.nombre }}</td>
+          <td>{% if c.tipo == 'N' %}<span class="badge bg-info">Natural</span>{% else %}<span class="badge bg-primary">Juridica</span>{% endif %}</td>
+          <td>{{ c.documento }}</td>
+          <td>{{ c.telefono|default:"—" }}</td>
+          <td>{{ c.email|default:"—" }}</td>
+          <td>{% if c.activo %}<span class="badge bg-success-subtle text-success">Activo</span>{% else %}<span class="badge bg-secondary-subtle text-secondary">Inactivo</span>{% endif %}</td>
+          <td><a href="{% url 'ventas_app:cliente-editar' c.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></a></td>
+        </tr>
+        {% empty %}<tr><td colspan="7" class="text-center text-muted py-5">Sin clientes registrados.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+  {% if is_paginated %}
+  <div class="card-footer d-flex justify-content-center">
+    <nav><ul class="pagination pagination-sm mb-0">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">«</a></li>{% endif %}
+      <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}/{{ page_obj.paginator.num_pages }}</a></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»</a></li>{% endif %}
+    </ul></nav>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

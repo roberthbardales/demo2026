@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'applications.inventario',   # ← NUEVO
     'applications.rrhh',         # ← NUEVO
+    'applications.ventas',       # ← NUEVO
     #terceros
     'model_utils',
 ]

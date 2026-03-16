@@ -1,0 +1,91 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Pedido {{ pedido.numero }}{% endblock %}
+{% block page_title %}Detalle de Pedido{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <!-- Info pedido -->
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="fw-bold mb-3"><code>{{ pedido.numero }}</code></h6>
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted small">Estado</span>
+          {% if pedido.estado == 'P' %}<span class="badge badge-pendiente">Pendiente</span>
+          {% elif pedido.estado == 'C' %}<span class="badge badge-confirmado">Confirmado</span>
+          {% elif pedido.estado == 'E' %}<span class="badge badge-entregado">Entregado</span>
+          {% else %}<span class="badge badge-anulado">Anulado</span>{% endif %}
+        </div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Cliente</span><span class="small fw-500">{{ pedido.cliente.nombre }}</span></div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Vendedor</span><span class="small">{{ pedido.vendedor.full_name }}</span></div>
+        <div class="d-flex justify-content-between mb-2"><span class="text-muted small">Fecha</span><span class="small">{{ pedido.fecha|date:"d/m/Y" }}</span></div>
+        <hr>
+        <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Subtotal</span><span class="small">S/ {{ pedido.subtotal }}</span></div>
+        <div class="d-flex justify-content-between mb-1"><span class="text-muted small">IGV (18%)</span><span class="small">S/ {{ pedido.igv }}</span></div>
+        <div class="d-flex justify-content-between"><span class="fw-bold">TOTAL</span><span class="fw-bold" style="color:#c0392b;">S/ {{ pedido.total }}</span></div>
+        {% if pedido.observaciones %}
+        <hr><p class="text-muted small mb-0">{{ pedido.observaciones }}</p>
+        {% endif %}
+        <div class="d-flex flex-column gap-2 mt-3">
+          {% if pedido.estado == 'P' %}
+          <a href="{% url 'ventas_app:pedido-confirmar' pedido.pk %}" class="btn btn-success btn-sm"><i class="bi bi-check-lg me-1"></i>Confirmar Pedido</a>
+          <a href="{% url 'ventas_app:pedido-anular' pedido.pk %}" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Anular</a>
+          {% endif %}
+          {% if pedido.estado == 'C' and not tiene_comprobante %}
+          <button type="button" class="btn btn-mod btn-sm" data-bs-toggle="modal" data-bs-target="#modalComprobante">
+            <i class="bi bi-receipt me-1"></i>Emitir Comprobante
+          </button>
+          {% endif %}
+          {% if tiene_comprobante %}
+          <a href="{% url 'ventas_app:comprobante-detalle' pedido.comprobante.pk %}" class="btn btn-outline-primary btn-sm"><i class="bi bi-receipt me-1"></i>Ver Comprobante</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detalle productos -->
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-box-seam me-2"></i>Productos</div>
+      <div class="card-body p-0"><div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead><tr><th>Producto</th><th>Cantidad</th><th>P. Unitario</th><th>Desc.</th><th>Subtotal</th></tr></thead>
+          <tbody>
+            {% for d in detalles %}
+            <tr>
+              <td>{{ d.producto.nombre }}</td>
+              <td>{{ d.cantidad }}</td>
+              <td>S/ {{ d.precio_unitario }}</td>
+              <td>{{ d.descuento }}%</td>
+              <td>S/ {{ d.subtotal }}</td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5" class="text-center text-muted py-4">Sin productos.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal emitir comprobante -->
+{% if pedido.estado == 'C' and not tiene_comprobante %}
+<div class="modal fade" id="modalComprobante" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Emitir Comprobante</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <form method="post" action="{% url 'ventas_app:comprobante-emitir' pedido.pk %}">{% csrf_token %}
+    <div class="modal-body">
+      <div class="mb-3"><label class="form-label">Tipo *</label>{{ form_comprobante.tipo }}</div>
+      <div class="mb-3"><label class="form-label">Fecha de Emision *</label>{{ form_comprobante.fecha_emision }}</div>
+      <div class="mb-3"><label class="form-label">Observaciones</label>{{ form_comprobante.observaciones }}</div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+      <button type="submit" class="btn btn-mod">Emitir</button>
+    </div>
+    </form>
+  </div></div>
+</div>
+{% endif %}
+{% endblock %}

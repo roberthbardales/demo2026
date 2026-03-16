@@ -32,12 +32,16 @@
 </div>
 
 <div class="card">
-  <div class="card-header d-flex justify-content-between align-items-center">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
     <span><i class="bi bi-people me-2"></i>Lista de Usuarios</span>
-    {% if user.is_superuser %}
-    <a href="{% url 'users_app:user-register' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Usuario</a>
-    {% endif %}
-  </div>
+    <div class="d-flex gap-2">
+        {% if user.is_superuser %}
+        <a href="{% url 'users_app:user-register' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Usuario</a>
+        {% endif %}
+        <a href="{% url 'users_app:user-reporte-excel' %}" class="btn btn-outline-success btn-sm"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+        <a href="{% url 'users_app:user-reporte-pdf' %}" class="btn btn-outline-danger btn-sm"><i class="bi bi-file-earmark-pdf me-1"></i>PDF</a>
+    </div>
+</div>
   <div class="card-body p-0">
     <div class="table-responsive">
       <table class="table table-hover mb-0">

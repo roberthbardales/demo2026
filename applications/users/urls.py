@@ -30,6 +30,16 @@ urlpatterns = [
         views.UserListView.as_view(),
         name='user-lista',
     ),
-
+    #exportar pdf y excel
+    path(
+        'users/reporte/excel/',
+        views.UserReporteExcelView.as_view(),
+        name='user-reporte-excel',
+    ),
+    path(
+        'users/reporte/pdf/',
+        views.UserReportePDFView.as_view(),
+        name='user-reporte-pdf',
+    ),
 
 ]

@@ -1,0 +1,55 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}Pedidos{% endblock %}
+{% block page_title %}Pedidos{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <span><i class="bi bi-cart3 me-2"></i>Pedidos</span>
+    <div class="d-flex gap-2">
+      <a href="{% url 'ventas_app:pedido-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Pedido</a>
+      <a href="{% url 'ventas_app:reporte-pedidos-excel' %}" class="btn btn-outline-success btn-sm"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+    </div>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2 align-items-end">
+      <div class="col-md-3">{{ form_filtro.estado }}</div>
+      <div class="col-md-4">{{ form_filtro.cliente }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_inicio }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_fin }}</div>
+      <div class="col-auto"><button type="submit" class="btn btn-mod btn-sm">Filtrar</button></div>
+    </form>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Numero</th><th>Cliente</th><th>Vendedor</th><th>Fecha</th><th>Total</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+        {% for p in pedidos %}
+        <tr>
+          <td><a href="{% url 'ventas_app:pedido-detalle' p.pk %}" class="text-decoration-none"><code>{{ p.numero }}</code></a></td>
+          <td style="font-size:.85rem;">{{ p.cliente.nombre|truncatechars:25 }}</td>
+          <td style="font-size:.82rem;">{{ p.vendedor.full_name }}</td>
+          <td style="font-size:.82rem;color:#888;">{{ p.fecha|date:"d/m/Y" }}</td>
+          <td>S/ {{ p.total }}</td>
+          <td>
+            {% if p.estado == 'P' %}<span class="badge badge-pendiente">Pendiente</span>
+            {% elif p.estado == 'C' %}<span class="badge badge-confirmado">Confirmado</span>
+            {% elif p.estado == 'E' %}<span class="badge badge-entregado">Entregado</span>
+            {% else %}<span class="badge badge-anulado">Anulado</span>{% endif %}
+          </td>
+          <td><a href="{% url 'ventas_app:pedido-detalle' p.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-eye"></i></a></td>
+        </tr>
+        {% empty %}<tr><td colspan="7" class="text-center text-muted py-5">Sin pedidos.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+  {% if is_paginated %}
+  <div class="card-footer d-flex justify-content-center">
+    <nav><ul class="pagination pagination-sm mb-0">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">«</a></li>{% endif %}
+      <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}/{{ page_obj.paginator.num_pages }}</a></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»</a></li>{% endif %}
+    </ul></nav>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -311,6 +311,16 @@
         </ul>
         {% endif %}
 
+        {% if user.is_superuser or user.occupation == '0' or user.occupation == '4' %}
+        <div class="sidebar-section">Ventas</div>
+        <ul class="sidebar-nav list-unstyled mb-0">
+            <li><a href="{% url 'ventas_app:dashboard' %}" class="nav-link"><i class="bi bi-cart3"></i> Dashboard</a></li>
+            <li><a href="{% url 'ventas_app:pedido-lista' %}" class="nav-link"><i class="bi bi-list-ul"></i> Pedidos</a></li>
+            <li><a href="{% url 'ventas_app:comprobante-lista' %}" class="nav-link"><i class="bi bi-receipt"></i> Comprobantes</a></li>
+            <li><a href="{% url 'ventas_app:cliente-lista' %}" class="nav-link"><i class="bi bi-people"></i> Clientes</a></li>
+        </ul>
+        {% endif %}
+
         {% if user.is_superuser or user.occupation == '0' %}
         <div class="sidebar-section">Administración</div>
         <ul class="sidebar-nav list-unstyled mb-0">

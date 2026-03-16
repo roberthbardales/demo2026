@@ -1,0 +1,24 @@
+{% extends 'ventas/base_ventas.html' %}
+{% block title %}{% if form.instance.pk %}Editar{% else %}Nuevo{% endif %} Cliente{% endblock %}
+{% block page_title %}{% if form.instance.pk %}Editar Cliente{% else %}Nuevo Cliente{% endif %}{% endblock %}
+{% block content %}
+<div class="row justify-content-center"><div class="col-lg-7">
+  <div class="card"><div class="card-header"><i class="bi bi-person me-2"></i>Datos del Cliente</div>
+  <div class="card-body"><form method="post">{% csrf_token %}
+    <div class="row g-3">
+      <div class="col-md-4"><label class="form-label">Tipo *</label>{{ form.tipo }}</div>
+      <div class="col-md-8"><label class="form-label">Nombre / Razon Social *</label>{{ form.nombre }}{% if form.nombre.errors %}<div class="text-danger small">{{ form.nombre.errors.0 }}</div>{% endif %}</div>
+      <div class="col-md-4"><label class="form-label">DNI / RUC *</label>{{ form.documento }}{% if form.documento.errors %}<div class="text-danger small">{{ form.documento.errors.0 }}</div>{% endif %}</div>
+      <div class="col-md-4"><label class="form-label">Telefono</label>{{ form.telefono }}</div>
+      <div class="col-md-4"><label class="form-label">Email</label>{{ form.email }}</div>
+      <div class="col-12"><label class="form-label">Direccion</label>{{ form.direccion }}</div>
+      <div class="col-auto"><div class="form-check mt-2">{{ form.activo }}<label class="form-check-label ms-2">Activo</label></div></div>
+    </div>
+    {% if form.non_field_errors %}<div class="alert alert-danger mt-3">{{ form.non_field_errors }}</div>{% endif %}
+    <div class="d-flex gap-2 mt-4">
+      <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Guardar</button>
+      <a href="{% url 'ventas_app:cliente-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+    </div>
+  </form></div></div>
+</div></div>
+{% endblock %}

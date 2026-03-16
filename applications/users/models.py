@@ -16,12 +16,14 @@ class User(AbstractBaseUser, PermissionsMixin):
     RRHH = '1'
     INVENTARIO = '2'
     EMPLEADO = '3'
+    VENTAS = '4'          # ← NUEVO
 
     ROLE_CHOICES = (
         (ADMIN, 'Administrador'),
         (RRHH, 'RRHH'),
         (INVENTARIO, 'Inventario'),
         (EMPLEADO, 'Empleado'),
+        (VENTAS, 'Ventas'),       # ← NUEVO
     )
 
     # GENEROS
