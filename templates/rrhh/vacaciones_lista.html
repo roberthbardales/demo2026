@@ -1,0 +1,32 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Vacaciones{% endblock %}
+{% block page_title %}Vacaciones{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-umbrella me-2"></i>Solicitudes de Vacaciones</span>
+    <a href="{% url 'rrhh_app:vacaciones-nueva' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nueva Solicitud</a>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Empleado</th><th>Desde</th><th>Hasta</th><th>Días</th><th>Estado</th><th>Acciones</th></tr></thead>
+      <tbody>
+        {% for v in vacaciones %}
+        <tr>
+          <td><a href="{% url 'rrhh_app:empleado-detalle' v.empleado.pk %}" class="text-decoration-none">{{ v.empleado.nombre_completo }}</a></td>
+          <td>{{ v.fecha_inicio|date:"d/m/Y" }}</td>
+          <td>{{ v.fecha_fin|date:"d/m/Y" }}</td>
+          <td>{{ v.dias_solicitados }}</td>
+          <td><span class="badge {% if v.estado == 'A' %}bg-success{% elif v.estado == 'P' %}bg-warning text-dark{% elif v.estado == 'G' %}bg-info{% else %}bg-danger{% endif %}">{{ v.get_estado_display }}</span></td>
+          <td>
+            {% if v.estado == 'P' %}
+            <a href="{% url 'rrhh_app:vacaciones-aprobar' v.pk %}" class="btn btn-sm btn-success"><i class="bi bi-check-lg"></i> Aprobar</a>
+            {% else %}—{% endif %}
+          </td>
+        </tr>
+        {% empty %}<tr><td colspan="6" class="text-center text-muted py-5">Sin solicitudes de vacaciones.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+</div>
+{% endblock %}

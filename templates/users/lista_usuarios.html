@@ -1,0 +1,99 @@
+{% extends 'users/base_users.html' %}
+{% block title %}Usuarios{% endblock %}
+{% block page_title %}Usuarios del Sistema{% endblock %}
+
+{% block content %}
+<!-- Stats -->
+<div class="row g-3 mb-4">
+  <div class="col-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon" style="background:#f0eafa;color:#6c42c0;"><i class="bi bi-shield-person"></i></div>
+      <div><div class="stat-label">Administradores</div><div class="stat-value">{{ total_admin }}</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon" style="background:#e8f1fb;color:#1e6fbf;"><i class="bi bi-people"></i></div>
+      <div><div class="stat-label">RRHH</div><div class="stat-value">{{ total_rrhh }}</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon" style="background:#e6f7f2;color:#108260;"><i class="bi bi-boxes"></i></div>
+      <div><div class="stat-label">Inventario</div><div class="stat-value">{{ total_inventario }}</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-xl-3">
+    <div class="stat-card">
+      <div class="stat-icon" style="background:#fff3cd;color:#856404;"><i class="bi bi-person"></i></div>
+      <div><div class="stat-label">Empleados</div><div class="stat-value">{{ total_empleado }}</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-people me-2"></i>Lista de Usuarios</span>
+    {% if user.is_superuser %}
+    <a href="{% url 'users_app:user-register' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Usuario</a>
+    {% endif %}
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Email</th>
+            <th>Rol</th>
+            <th>Género</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for u in usuarios %}
+          <tr>
+            <td>
+              <div class="d-flex align-items-center gap-2">
+                {% if u.avatar %}
+                <img src="{{ u.avatar.url }}" class="rounded-circle" style="width:34px;height:34px;object-fit:cover;">
+                {% else %}
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width:34px;height:34px;background:#e8f1fb;color:#1e6fbf;font-size:.85rem;font-weight:600;">
+                  {{ u.full_name|first|upper }}
+                </div>
+                {% endif %}
+                <div>
+                  <div style="font-weight:500;font-size:.875rem;">{{ u.full_name }}</div>
+                </div>
+              </div>
+            </td>
+            <td style="font-size:.85rem;">{{ u.email }}</td>
+            <td>
+              {% if u.occupation == '0' %}
+              <span class="badge" style="background:#f0eafa;color:#6c42c0;">Administrador</span>
+              {% elif u.occupation == '1' %}
+              <span class="badge" style="background:#e8f1fb;color:#1e6fbf;">RRHH</span>
+              {% elif u.occupation == '2' %}
+              <span class="badge" style="background:#e6f7f2;color:#108260;">Inventario</span>
+              {% else %}
+              <span class="badge" style="background:#fff3cd;color:#856404;">Empleado</span>
+              {% endif %}
+            </td>
+            <td style="font-size:.85rem;">{{ u.get_genero_display|default:"—" }}</td>
+            <td>
+              {% if u.is_active %}
+              <span class="badge bg-success-subtle text-success">Activo</span>
+              {% else %}
+              <span class="badge bg-secondary-subtle text-secondary">Inactivo</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="5" class="text-center text-muted py-5">Sin usuarios registrados.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

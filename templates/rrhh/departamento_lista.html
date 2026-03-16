@@ -1,0 +1,26 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Departamentos{% endblock %}
+{% block page_title %}Departamentos{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-diagram-3 me-2"></i>Departamentos</span>
+    <a href="{% url 'rrhh_app:departamento-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo</a>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Nombre</th><th>Descripción</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+        {% for d in departamentos %}
+        <tr>
+          <td class="fw-500">{{ d.nombre }}</td>
+          <td style="font-size:.85rem;">{{ d.descripcion|truncatechars:60|default:"—" }}</td>
+          <td>{% if d.activo %}<span class="badge bg-success-subtle text-success">Activo</span>{% else %}<span class="badge bg-secondary-subtle text-secondary">Inactivo</span>{% endif %}</td>
+          <td><a href="#" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></a></td>
+        </tr>
+        {% empty %}<tr><td colspan="4" class="text-center text-muted py-5">Sin departamentos.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+</div>
+{% endblock %}

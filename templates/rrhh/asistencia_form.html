@@ -1,0 +1,22 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Registrar Asistencia{% endblock %}
+{% block page_title %}Registrar Asistencia{% endblock %}
+{% block content %}
+<div class="row justify-content-center"><div class="col-lg-7">
+  <div class="card"><div class="card-header"><i class="bi bi-calendar-check me-2"></i>Registrar Asistencia</div>
+  <div class="card-body"><form method="post">{% csrf_token %}
+    <div class="row g-3">
+      <div class="col-md-6"><label class="form-label">Empleado *</label>{{ form.empleado }}</div>
+      <div class="col-md-6"><label class="form-label">Fecha *</label>{{ form.fecha }}</div>
+      <div class="col-md-4"><label class="form-label">Hora Entrada</label>{{ form.hora_entrada }}</div>
+      <div class="col-md-4"><label class="form-label">Hora Salida</label>{{ form.hora_salida }}</div>
+      <div class="col-md-4"><label class="form-label">Estado</label>{{ form.estado }}</div>
+      <div class="col-12"><label class="form-label">Observación</label>{{ form.observacion }}</div>
+    </div>
+    <div class="d-flex gap-2 mt-4">
+      <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Guardar</button>
+      <a href="{% url 'rrhh_app:asistencia-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+    </div>
+  </form></div></div>
+</div></div>
+{% endblock %}

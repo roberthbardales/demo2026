@@ -1,0 +1,25 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}{% if form.instance.pk %}Editar{% else %}Nuevo{% endif %} Contrato{% endblock %}
+{% block page_title %}{% if form.instance.pk %}Editar Contrato{% else %}Nuevo Contrato{% endif %}{% endblock %}
+{% block content %}
+<div class="row justify-content-center"><div class="col-lg-8">
+  <div class="card"><div class="card-header"><i class="bi bi-file-earmark-text me-2"></i>Datos del Contrato</div>
+  <div class="card-body"><form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div class="row g-3">
+      <div class="col-md-6"><label class="form-label">Empleado *</label>{{ form.empleado }}</div>
+      <div class="col-md-6"><label class="form-label">Tipo *</label>{{ form.tipo }}</div>
+      <div class="col-md-4"><label class="form-label">Fecha Inicio *</label>{{ form.fecha_inicio }}</div>
+      <div class="col-md-4"><label class="form-label">Fecha Fin</label>{{ form.fecha_fin }}</div>
+      <div class="col-md-4"><label class="form-label">Sueldo *</label>{{ form.sueldo }}</div>
+      <div class="col-md-4"><label class="form-label">Estado</label>{{ form.estado }}</div>
+      <div class="col-md-8"><label class="form-label">Archivo</label>{{ form.archivo }}</div>
+      <div class="col-12"><label class="form-label">Observaciones</label>{{ form.observaciones }}</div>
+    </div>
+    {% if form.non_field_errors %}<div class="alert alert-danger mt-3">{{ form.non_field_errors }}</div>{% endif %}
+    <div class="d-flex gap-2 mt-4">
+      <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Guardar</button>
+      <a href="{% url 'rrhh_app:contrato-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+    </div>
+  </form></div></div>
+</div></div>
+{% endblock %}

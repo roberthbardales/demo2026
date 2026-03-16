@@ -1,0 +1,2409 @@
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+Ctrl click to launch VS Code Native REPL
+>>> >>> >>> ... ... ... '\nScript de datos de prueba — Empresa Comercial Peruana\nEjecutar con: python manage.py shell < seed_data.py\n'
+>>> >>> >>> >>> >>> >>> 🚀 Iniciando carga de datos...
+>>> >>> >>> >>> >>> >>> ... ... ... >>> ... ... >>> ... ... >>> ... ... ... >>> >>> >>> >>> >>> ... ... ... ... ... >>> >>> ... ... ... ... ... >>> >>> ... ... ... ... ... ... ... >>> >>> ... ... ... ... ... >>> >>> ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 63, in _maybe_compile
+    compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc81' in position 215: surrogates not allowed
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ]
+    ^
+SyntaxError: unmatched ']'
+>>> >>> ... ... >>> ... ... ... ... >>> >>> >>> >>> 👤 Creando usuarios...
+>>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> >>> ... ... ... ... ... ... ... ... ... >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    email = email_corporativo(nombre, apellido1)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    counter = 1
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    base_email = email
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    while email in used_emails:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    email = base_email.replace('@', f'{counter}@')
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    counter += 1
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    used_emails.add(email)
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    occupation = roles_dist[i] if i < len(roles_dist) else User.EMPLEADO
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_nac = fecha_aleatoria(date(1975, 1, 1), date(2000, 12, 31))
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    user = User.objects.create_user(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    email=email,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    password='admin',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    full_name=full_name,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    occupation=occupation,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    genero=genero,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    date_birth=fecha_nac,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    )
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    usuarios_creados.append(user)
+IndentationError: unexpected indent
+>>> >>>    ✅ 0 usuarios creados
+>>> >>> >>> >>> >>> 👥 Creando datos de RRHH...
+>>> >>> ... ... ... >>> >>> >>> ... ... ... ... ... ... ... ... >>> >>> >>> ... ... ... >>> >>> ... ... ... ... ... ... ... ... >>> >>> >>> ... ... ... ... ... ... ... ... ... >>> >>>    Creando empleados...
+>>> >>> >>> >>> >>> >>> >>> >>> ... ... ... ... ... ... ... ... >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    dni = dni_aleatorio()
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    while dni in used_dnis:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    dni = dni_aleatorio()
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    used_dnis.add(dni)
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    codigo = f'EMP{str(i+1).zfill(4)}'
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_ingreso = fecha_aleatoria(date(2015, 1, 1), date(2024, 12, 31))
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_nac = fecha_aleatoria(date(1975, 1, 1), date(2000, 12, 31))
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    sueldo = Decimal(str(random.choice([1025, 1200, 1500, 1800, 2000, 2500, 3000, 3500, 4000, 5000])))
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    cargo = random.choice(cargos_objs)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    estado = estados_emp[i]
+IndentationError: unexpected indent
+>>> >>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    usuario_vinculado = None
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    if i < len(usuarios_creados) and random.random() > 0.6:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    usuario_vinculado = usuarios_creados[i]
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    emp = Empleado.objects.create(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    codigo=codigo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    nombres=nombre,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    apellidos=f"{apellido1} {apellido2}",
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    dni=dni,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    genero=genero,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_nacimiento=fecha_nac,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    email=email_corporativo(nombre, apellido1),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    telefono=telefono_aleatorio(),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    direccion=direccion_aleatoria(),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    cargo=cargo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_ingreso=fecha_ingreso,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    sueldo_base=sueldo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    estado=estado,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    usuario=usuario_vinculado,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    )
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    empleados_creados.append(emp)
+IndentationError: unexpected indent
+>>> >>>    ✅ 0 empleados creados
+>>> >>> >>>    Creando contratos...
+>>> >>> ... ... ... ... ... ... ... ... ... ... ... ... >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    Contrato.objects.create(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    empleado=emp,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    tipo=tipo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_inicio=fecha_ini,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_fin=fecha_fin,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    sueldo=emp.sueldo_base + Decimal(str(random.randint(0, 500))),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    estado=estado,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    observaciones=f'Contrato #{j+1} del empleado {emp.nombre_completo}',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    )
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    if fecha_fin:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_ini = fecha_fin + timedelta(days=1)
+IndentationError: unexpected indent
+>>> >>>    ✅ Contratos creados
+>>> >>> >>>    Creando asistencias...
+>>> >>> >>> >>> >>> >>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 482, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+>>>    ✅ Asistencias creadas
+>>> >>> >>>    Creando ausencias...
+>>> >>> >>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 482, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+>>>    ✅ Ausencias creadas
+>>> >>> >>>    Creando vacaciones...
+>>> >>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 482, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+>>>    ✅ Vacaciones creadas
+>>> >>> >>>    Creando documentos...
+>>> >>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 482, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+>>>    ✅ Documentos creados
+>>> ✅ RRHH completo
+>>> >>> >>> >>> >>> 📦 Creando datos de Inventario...
+>>> >>> ... ... ... >>> >>> >>> ... ... ... ... ... >>> >>> ... ... ... >>> >>> ... ... ... ... ... ... ... ... ... ... ... >>> >>> ... ... ... >>> >>> ... ... ... ... ... >>> >>> ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 4, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 378, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+>>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... >>> >>> ... ... ... ... ... ... ... ... ... >>> >>>    Creando 500 productos...
+>>> >>> ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 63, in _maybe_compile
+    compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc81' in position 817: surrogates not allowed
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Kiwicha 500g', 'Café Nescafé Classic 200g', 'Café Altomayo 200g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Té Lipton 25 sobres', 'Manzanilla 25 sobres', 'Canela Molida 50g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Bebidas': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Gaseosa Inca Kola 1.5L', 'Gaseosa Coca Cola 1.5L', 'Gaseosa Pepsi 1.5L',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Gaseosa Sprite 1.5L', 'Agua San Luis 625ml', 'Agua Cielo 625ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Agua San Mateo 500ml', 'Jugo Frugos Durazno 1L', 'Jugo Frugos Naranja 1L',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Jugo Pulp Naranja 500ml', 'Jugo Watts Piña 1L', 'Leche Gloria UHT 1L',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Leche Laive Entera 1L', 'Leche Ideal 946ml', 'Yogurt Gloria Fresa 1kg',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Yogurt Yomost Vainilla 150g', 'Bebida Powerade 500ml', 'Bebida Gatorade 500ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cerveza Cristal 650ml', 'Cerveza Pilsen 650ml', 'Cerveza Cusqueña 650ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Vino Tabernero Borgoña 750ml', 'Chicha Morada 500ml', 'Maracuyá Concentrado 500ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Limpieza': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Detergente Ariel 360g', 'Detergente Ace 360g', 'Detergente Bolivar 360g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Jabón Marsella 230g', 'Jabón Bolivar 230g', 'Lejía Clorox 680ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Lejía Sapolio 680ml', 'Limpiatodo Sapolio 500ml', 'Pinesol 500ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Desinfectante Lysol 500ml', 'Suavitel 850ml', 'Downy 850ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Esponja de Cocina 2 unidades', 'Guantes de Limpieza Talla M',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Escoba Plástica', 'Trapeador Algodón', 'Balde Plástico 10L',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Papel Higiénico Elite 4 rollos', 'Papel Higiénico Suave 4 rollos',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Servilletas Elite 100 unidades', 'Papel Toalla Scott 3 rollos',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Bolsa de Basura 10 unidades', 'Ambientador Glade 400ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pastilla WC Pato 50g', 'Lavavajilla Ayudín Limón 360g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cuidado Personal': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Shampoo Head & Shoulders 400ml', 'Shampoo Pantene 400ml', 'Shampoo Sedal 400ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Acondicionador Pantene 400ml', 'Jabón Dove 90g', 'Jabón Lux 90g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Jabón Palmolive 90g', 'Desodorante Rexona 150ml', 'Desodorante Axe 150ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Desodorante Nivea 150ml', 'Crema Nivea 400ml', 'Crema Pond\'s 200g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Crema Jergens 200ml', 'Bloqueador Solar Sundown FPS50 120ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pasta Dental Colgate 90g', 'Pasta Dental Oral-B 90g', 'Cepillo Dental Colgate',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Hilo Dental Oral-B 50m', 'Enjuague Bucal Listerine 500ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Toalla Femenina Always 8 unidades', 'Protector Diario Stayfree 30 unidades',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pañal Huggies Talla M 30 unidades', 'Pañal Pampers Talla M 30 unidades',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Perfume Genève 50ml', 'Maquinilla de Afeitar Gillette 2 unidades',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Electrónica': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Foco LED 9W', 'Foco LED 15W', 'Foco Espiral 20W', 'Extensión Eléctrica 3m',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cargador USB Universal', 'Cable HDMI 1.8m', 'Cable USB-C 1m',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Auriculares Bluetooth', 'Audífono In-ear', 'Parlante Portátil Bluetooth',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Batería Portátil 10000mAh', 'Mouse Inalámbrico', 'Teclado USB',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Webcam HD 720p', 'Memoria USB 32GB', 'Memoria USB 64GB',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Tarjeta Micro SD 32GB', 'Adaptador WiFi USB', 'Regleta 5 tomas',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pila Alcalina AA x2', 'Pila Alcalina AAA x2', 'Calculadora Casio FX',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Radio AM/FM Portátil', 'Plancha de Cabello', 'Secadora de Cabello 1200W',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Ferretería': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pintura Látex Blanco 1 galón', 'Pintura Látex Amarillo 1 galón',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Pintura Esmalte Negro 1/4 galón', 'Thinner 1 litro', 'Brocha 3 pulgadas',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Rodillo de Pintar', 'Cinta Masking 2 pulgadas', 'Cinta Aislante Negra',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Alambre N°16 1kg', 'Clavo 2 pulgadas 1kg', 'Tornillo Autorroscante x100',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Tarugo Plástico x50', 'Llave Inglesa 10 pulgadas', 'Destornillador Estrella',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Destornillador Plano', 'Martillo 500g', 'Serrucho 20 pulgadas',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cinta Métrica 5m', 'Nivel Burbuja 30cm', 'Lija Grano 80',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Silicona Transparente 280ml', 'Pegamento Epóxico', 'Candado 40mm',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Bisagra 3 pulgadas x2', 'Interruptor Simple',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Papelería': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cuaderno A4 100 hojas', 'Cuaderno A5 80 hojas', 'Libreta Espiral A5',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Papel Bond A4 500 hojas', 'Papel Craft 50 hojas', 'Cartulina Blanca A3',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Lapicero Bic Azul x12', 'Lapicero Pilot Negro x12', 'Lápiz 2B x12',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Borrador Pelikan', 'Tajador Metálico', 'Regla 30cm Transparente',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Tijera Escolar 7 pulgadas', 'Engrapador Estándar', 'Grapas 26/6 x1000',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Perforador 2 agujeros', 'Folder Manila A4 x50', 'Archivador Oficio Lomo 8',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Post-it 3x3 100 hojas', 'Resaltador Amarillo', 'Marcador Permanente Negro',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Plumón de Pizarra Azul', 'Corrector Líquido Faber', 'Sobre Manila A4 x50',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Cinta Scotch 18mm x50m',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Farmacia': [
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Paracetamol 500mg x100', 'Ibuprofeno 400mg x100', 'Aspirina 100mg x100',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Vitamina C 500mg x60', 'Vitamina D3 1000UI x60', 'Complejo B x60',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Calcio + D3 x60', 'Omega 3 x60', 'Zinc 10mg x60', 'Multivitamínico x60',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Alcohol 70° 1 litro', 'Agua Oxigenada 120ml', 'Algodón 100g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Gasa Estéril 10x10 x10', 'Esparadrapo 2.5cm x5m', 'Vendaje Elástico 5cm',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Termómetro Digital', 'Tensiómetro Digital Brazo', 'Glucómetro Kit',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Mascarilla KN95 x10', 'Guantes Nitrilo Talla M x100',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Gel Antibacterial 500ml', 'Jabón Antibacterial 250ml',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    'Repelente de Insectos 100ml', 'Pomada Bepanthen 30g',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ],
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    }
+    ^
+SyntaxError: unmatched '}'
+>>> >>> >>> ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+NameError: name 'productos_por_categoria' is not defined
+>>> >>> ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 1, in <module>
+NameError: name 'productos_por_categoria' is not defined
+>>> >>> >>> >>> >>> ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 2, in <module>
+NameError: name 'productos_por_categoria' is not defined
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_compra = Decimal(str(round(random.uniform(1.5, 150.0), 2)))
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    margen = Decimal(str(round(random.uniform(1.15, 1.60), 2)))
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_venta = round(precio_compra * margen, 2)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_min = random.randint(5, 20)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_max = random.randint(100, 500)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_actual = random.randint(0, stock_max)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    unidad = random.choice(unidades_objs)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    proveedor = random.choice(proveedores_objs)
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    p = Producto.objects.create(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    codigo=codigo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    nombre=nombre_prod,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    descripcion=f'{nombre_prod} — producto de calidad para distribución comercial.',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    categoria=cat_obj,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    unidad_medida=unidad,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    proveedor=proveedor,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_compra=precio_compra,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_venta=precio_venta,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_actual=Decimal(str(stock_actual)),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_minimo=Decimal(str(stock_min)),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    stock_maximo=Decimal(str(stock_max)),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    activo=True,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    )
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    productos_creados.append(p)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    if len(productos_creados) >= 500:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    break
+IndentationError: unexpected indent
+>>> >>>    ✅ 0 productos creados
+>>> >>> >>>    Creando movimientos...
+>>> >>> >>> >>> >>> ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 2, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 378, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    if tipo == Movimiento.ENTRADA:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    motivo = random.choice(motivos_entrada)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_u = producto.precio_compra
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    else:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    if producto.stock_actual < cantidad:
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    continue
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    motivo = random.choice(motivos_salida)
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_u = producto.precio_venta
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_mov = timezone.make_aware(datetime.combine(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha_aleatoria(date(2024, 1, 1), date.today()),
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    datetime.min.time()
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    ))
+IndentationError: unexpected indent
+>>> >>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    Movimiento.objects.create(
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    tipo=tipo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    producto=producto,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    almacen=almacen,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    cantidad=cantidad,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    precio_unitario=precio_u,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    motivo=motivo,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    documento_referencia=f'DOC-{random.randint(10000, 99999)}',
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    usuario=admin_user,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    fecha=fecha_mov,
+IndentationError: unexpected indent
+>>> Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 63, in runsource
+    code = self.compile(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 153, in __call__
+    return _maybe_compile(self.compiler, source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 73, in _maybe_compile
+    return compiler(source, filename, symbol)
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\codeop.py", line 118, in __call__
+    codeob = compile(source, filename, symbol, self.flags, True)
+  File "<console>", line 1
+    )
+IndentationError: unexpected indent
+>>> >>>    ✅ Movimientos creados
+>>> >>> >>>    Creando ajustes...
+>>> >>> >>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... Traceback (most recent call last):
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<console>", line 2, in <module>
+  File "C:\Users\NEWTWO\AppData\Local\Programs\Python\Python310\lib\random.py", line 378, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+>>>    ✅ Ajustes creados
+>>> >>> >>>    Creando alertas...
+>>> ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... >>>    ✅ Alertas creadas
+>>> ✅ Inventario completo
+>>> >>> >>> >>> >>> 
+==================================================
+>>> 🎉 CARGA DE DATOS COMPLETADA
+>>> ==================================================
+>>>   Usuarios:      1
+>>>   Departamentos: 7
+>>>   Cargos:        31
+>>>   Empleados:     0
+>>>   Contratos:     0
+>>>   Asistencias:   0
+>>>   Ausencias:     0
+>>>   Vacaciones:    0
+>>>   Documentos:    0
+>>>   Productos:     0
+>>>   Proveedores:   12
+>>>   Movimientos:   0
+>>>   Ajustes:       0
+>>>   Alertas:       0
+>>> ==================================================
+>>>   Contraseña de todos los usuarios: admin
+>>> ==================================================
+>>> 
+now exiting InteractiveConsole...

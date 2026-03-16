@@ -1,0 +1,42 @@
+{% extends 'users/base_users.html' %}
+{% block title %}Cambiar Contraseña{% endblock %}
+{% block page_title %}Cambiar Contraseña{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-5">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-key me-2"></i>Cambiar Contraseña</div>
+      <div class="card-body">
+        <div class="alert alert-warning border-0 rounded-3 mb-4" style="font-size:.875rem;">
+          <i class="bi bi-exclamation-triangle me-2"></i>
+          Al cambiar tu contraseña se cerrará tu sesión automáticamente.
+        </div>
+        <form method="post">{% csrf_token %}
+          <div class="mb-3">
+            <label class="form-label">Contraseña actual *</label>
+            {{ form.password1 }}
+            {% if form.password1.errors %}<div class="text-danger small mt-1">{{ form.password1.errors.0 }}</div>{% endif %}
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nueva contraseña *</label>
+            {{ form.password2 }}
+            {% if form.password2.errors %}<div class="text-danger small mt-1">{{ form.password2.errors.0 }}</div>{% endif %}
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Confirmar nueva contraseña *</label>
+            {{ form.password3 }}
+          </div>
+          {% if form.non_field_errors %}
+          <div class="alert alert-danger border-0 rounded-3 mb-3" style="font-size:.875rem;">{{ form.non_field_errors.0 }}</div>
+          {% endif %}
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Cambiar Contraseña</button>
+            <a href="{% url 'home_app:inicio' %}" class="btn btn-outline-secondary">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

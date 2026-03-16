@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}Inicio — Sistema de Gestión{% endblock %}
+{% block page_title %}Inicio{% endblock %}
+{% block nav_inicio %}active{% endblock %}
+
+{% block content %}
+<div class="row g-4 mb-4">
+    <div class="col-12">
+        <h4 class="fw-bold mb-1" style="color:#1a2e42;">Bienvenido, {{ user.full_name }} 👋</h4>
+        <p class="text-muted mb-0">Selecciona un módulo para comenzar.</p>
+    </div>
+</div>
+
+<div class="row g-4">
+    {% if user.is_superuser or user.occupation == '0' or user.occupation == '1' %}
+    <div class="col-md-6 col-xl-4">
+        <a href="{% url 'rrhh_app:dashboard' %}" class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm" style="border-radius:14px;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(30,111,191,0.13)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="stat-icon" style="background:#e8f1fb;color:#1e6fbf;">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold" style="color:#1a2e42;">Recursos Humanos</div>
+                            <div class="text-muted" style="font-size:0.8rem;">Gestión de personal</div>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0" style="font-size:0.875rem;">Empleados, contratos, asistencia, ausencias y vacaciones.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                    <span class="btn btn-sm btn-primary">Ir al módulo <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+
+    {% if user.is_superuser or user.occupation == '0' or user.occupation == '2' %}
+    <div class="col-md-6 col-xl-4">
+        <a href="{% url 'inventario_app:dashboard' %}" class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm" style="border-radius:14px;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(16,130,96,0.13)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="stat-icon" style="background:#e6f7f2;color:#108260;">
+                            <i class="bi bi-boxes"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold" style="color:#1a2e42;">Inventario</div>
+                            <div class="text-muted" style="font-size:0.8rem;">Control de stock</div>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0" style="font-size:0.875rem;">Productos, movimientos, proveedores y alertas de stock.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                    <span class="btn btn-sm" style="background:#108260;color:#fff;">Ir al módulo <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+
+    {% if user.is_superuser or user.occupation == '0' %}
+    <div class="col-md-6 col-xl-4">
+        <a href="{% url 'users_app:user-lista' %}" class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm" style="border-radius:14px;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(108,66,192,0.13)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="stat-icon" style="background:#f0eafa;color:#6c42c0;">
+                            <i class="bi bi-shield-person-fill"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold" style="color:#1a2e42;">Administración</div>
+                            <div class="text-muted" style="font-size:0.8rem;">Usuarios del sistema</div>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-0" style="font-size:0.875rem;">Gestión de usuarios, roles y permisos del sistema.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                    <span class="btn btn-sm" style="background:#6c42c0;color:#fff;">Ir al módulo <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

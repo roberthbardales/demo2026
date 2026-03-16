@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block nav_inventario %}active{% endblock %}
+
+{% block extra_css %}
+<style>
+    :root {
+        --mod-color: #108260;
+        --mod-light: #e6f7f2;
+    }
+    .mod-badge {
+        background: var(--mod-light);
+        color: var(--mod-color);
+        font-size: 0.72rem;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .btn-mod { background: var(--mod-color); color: #fff; border: none; }
+    .btn-mod:hover { background: #0c6b4e; color: #fff; }
+    .table thead th { color: var(--mod-color) !important; }
+    .breadcrumb-item a { color: var(--mod-color); text-decoration: none; }
+</style>
+{% endblock %}

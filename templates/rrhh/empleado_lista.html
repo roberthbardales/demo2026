@@ -1,0 +1,62 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Empleados{% endblock %}
+{% block page_title %}Empleados{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <span><i class="bi bi-person-badge me-2"></i>Lista de Empleados</span>
+    <a href="{% url 'rrhh_app:empleado-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Empleado</a>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2 align-items-end">
+      <div class="col-md-5"><input type="text" name="q" value="{{ q }}" class="form-control form-control-sm" placeholder="Buscar por nombre, DNI o código..."></div>
+      <div class="col-md-4">
+        <select name="departamento" class="form-select form-select-sm">
+          <option value="">Todos los departamentos</option>
+          {% for d in departamentos %}<option value="{{ d.id }}" {% if dep_sel == d.id|stringformat:"s" %}selected{% endif %}>{{ d.nombre }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-mod btn-sm">Filtrar</button>
+        <a href="{% url 'rrhh_app:empleado-lista' %}" class="btn btn-sm btn-outline-secondary">Limpiar</a>
+      </div>
+    </form>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead><tr><th>Código</th><th>Empleado</th><th>DNI</th><th>Cargo</th><th>Departamento</th><th>Ingreso</th><th>Estado</th><th></th></tr></thead>
+        <tbody>
+          {% for e in empleados %}
+          <tr>
+            <td><code>{{ e.codigo }}</code></td>
+            <td>
+              <a href="{% url 'rrhh_app:empleado-detalle' e.pk %}" class="text-decoration-none fw-500">{{ e.nombre_completo }}</a>
+            </td>
+            <td>{{ e.dni }}</td>
+            <td style="font-size:.85rem;">{{ e.cargo.nombre }}</td>
+            <td style="font-size:.85rem;">{{ e.departamento.nombre }}</td>
+            <td style="font-size:.82rem;color:#888;">{{ e.fecha_ingreso|date:"d/m/Y" }}</td>
+            <td>
+              <span class="badge-status estado-{{ e.estado }}">{{ e.get_estado_display }}</span>
+            </td>
+            <td><a href="{% url 'rrhh_app:empleado-editar' e.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></a></td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="8" class="text-center text-muted py-5">No se encontraron empleados.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% if is_paginated %}
+  <div class="card-footer d-flex justify-content-center">
+    <nav><ul class="pagination pagination-sm mb-0">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">«</a></li>{% endif %}
+      <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}/{{ page_obj.paginator.num_pages }}</a></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»</a></li>{% endif %}
+    </ul></nav>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

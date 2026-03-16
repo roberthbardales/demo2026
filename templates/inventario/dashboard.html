@@ -1,0 +1,132 @@
+{% extends 'inventario/base_inventario.html' %}
+{% block title %}Dashboard — Inventario{% endblock %}
+{% block page_title %}Dashboard Inventario{% endblock %}
+
+{% block content %}
+<!-- Stats -->
+<div class="row g-3 mb-4">
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e6f7f2;color:#108260;"><i class="bi bi-box-seam"></i></div>
+            <div>
+                <div class="stat-label">Productos</div>
+                <div class="stat-value">{{ total_productos }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fff3cd;color:#856404;"><i class="bi bi-exclamation-triangle"></i></div>
+            <div>
+                <div class="stat-label">Stock Bajo</div>
+                <div class="stat-value">{{ productos_stock_bajo }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fde8e8;color:#c0392b;"><i class="bi bi-x-circle"></i></div>
+            <div>
+                <div class="stat-label">Sin Stock</div>
+                <div class="stat-value">{{ productos_sin_stock }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e8f1fb;color:#1e6fbf;"><i class="bi bi-truck"></i></div>
+            <div>
+                <div class="stat-label">Proveedores</div>
+                <div class="stat-value">{{ total_proveedores }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Valor inventario -->
+<div class="row g-3 mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-clock-history me-2"></i>Últimos movimientos</span>
+                <a href="{% url 'inventario_app:movimiento-lista' %}" class="btn btn-sm btn-outline-secondary">Ver todos</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Tipo</th>
+                                <th>Cantidad</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for m in movimientos_recientes %}
+                            <tr>
+                                <td style="font-size:.85rem;">{{ m.producto.nombre|truncatechars:25 }}</td>
+                                <td>
+                                    {% if m.tipo == 'E' %}
+                                    <span class="badge bg-success">Entrada</span>
+                                    {% else %}
+                                    <span class="badge bg-danger">Salida</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ m.cantidad }}</td>
+                                <td style="font-size:.8rem;color:#888;">{{ m.fecha|date:"d/m/Y H:i" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr><td colspan="4" class="text-center text-muted py-4">Sin movimientos registrados</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-bell me-2"></i>Alertas pendientes</span>
+                <a href="{% url 'inventario_app:alerta-lista' %}" class="btn btn-sm btn-outline-secondary">Ver todas</a>
+            </div>
+            <div class="card-body">
+                {% for alerta in alertas %}
+                <div class="d-flex align-items-start gap-3 mb-3">
+                    <div style="width:36px;height:36px;border-radius:8px;background:#fde8e8;color:#c0392b;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="bi bi-exclamation-circle"></i>
+                    </div>
+                    <div>
+                        <div style="font-size:.85rem;font-weight:500;">{{ alerta.producto.nombre }}</div>
+                        <div style="font-size:.78rem;color:#888;">{{ alerta.mensaje }}</div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="text-center text-muted py-4">
+                    <i class="bi bi-check-circle fs-3 d-block mb-2 text-success"></i>
+                    Sin alertas pendientes
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Accesos rápidos -->
+<div class="row g-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">Acciones rápidas</div>
+            <div class="card-body d-flex flex-wrap gap-2">
+                <a href="{% url 'inventario_app:entrada-stock' %}" class="btn btn-mod"><i class="bi bi-plus-circle me-1"></i>Registrar Entrada</a>
+                <a href="{% url 'inventario_app:salida-stock' %}" class="btn btn-outline-danger"><i class="bi bi-dash-circle me-1"></i>Registrar Salida</a>
+                <a href="{% url 'inventario_app:producto-nuevo' %}" class="btn btn-outline-secondary"><i class="bi bi-box-seam me-1"></i>Nuevo Producto</a>
+                <a href="{% url 'inventario_app:reporte-productos-excel' %}" class="btn btn-outline-success"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+                <a href="{% url 'inventario_app:reporte-productos-pdf' %}" class="btn btn-outline-danger"><i class="bi bi-file-earmark-pdf me-1"></i>PDF</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

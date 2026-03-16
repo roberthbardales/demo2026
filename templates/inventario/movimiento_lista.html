@@ -1,0 +1,55 @@
+{% extends 'inventario/base_inventario.html' %}
+{% block title %}Movimientos{% endblock %}
+{% block page_title %}Movimientos de Stock{% endblock %}
+{% block content %}
+<div class="card mb-3">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <span><i class="bi bi-arrow-left-right me-2"></i>Movimientos</span>
+    <div class="d-flex gap-2">
+      <a href="{% url 'inventario_app:entrada-stock' %}" class="btn btn-success btn-sm"><i class="bi bi-plus-circle me-1"></i>Entrada</a>
+      <a href="{% url 'inventario_app:salida-stock' %}" class="btn btn-danger btn-sm"><i class="bi bi-dash-circle me-1"></i>Salida</a>
+      <a href="{% url 'inventario_app:reporte-movimientos-excel' %}" class="btn btn-outline-success btn-sm"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+    </div>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2 align-items-end">
+      <div class="col-md-3">{{ form_filtro.tipo }}</div>
+      <div class="col-md-4">{{ form_filtro.producto }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_inicio }}</div>
+      <div class="col-md-2">{{ form_filtro.fecha_fin }}</div>
+      <div class="col-auto"><button type="submit" class="btn btn-mod btn-sm">Filtrar</button></div>
+    </form>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead><tr><th>Fecha</th><th>Tipo</th><th>Producto</th><th>Almacén</th><th>Cantidad</th><th>Total</th><th>Usuario</th></tr></thead>
+        <tbody>
+          {% for m in movimientos %}
+          <tr>
+            <td style="font-size:.82rem;">{{ m.fecha|date:"d/m/Y H:i" }}</td>
+            <td>{% if m.tipo == 'E' %}<span class="badge bg-success">Entrada</span>{% else %}<span class="badge bg-danger">Salida</span>{% endif %}</td>
+            <td>{{ m.producto.nombre|truncatechars:25 }}</td>
+            <td>{{ m.almacen.nombre }}</td>
+            <td>{{ m.cantidad }}</td>
+            <td>S/ {{ m.total }}</td>
+            <td style="font-size:.8rem;">{{ m.usuario.full_name }}</td>
+          </tr>
+          {% empty %}
+          <tr><td colspan="7" class="text-center text-muted py-5">Sin movimientos registrados.</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% if is_paginated %}
+  <div class="card-footer d-flex justify-content-center">
+    <nav><ul class="pagination pagination-sm mb-0">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">«</a></li>{% endif %}
+      <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}/{{ page_obj.paginator.num_pages }}</a></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»</a></li>{% endif %}
+    </ul></nav>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

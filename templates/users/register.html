@@ -1,0 +1,36 @@
+{% extends 'users/base_users.html' %}
+{% block title %}Registrar Usuario{% endblock %}
+{% block page_title %}Registrar Usuario{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-person-plus me-2"></i>Nuevo Usuario del Sistema</div>
+      <div class="card-body">
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+          <h6 class="text-muted mb-3" style="font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;">Datos personales</h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-8"><label class="form-label">Nombre completo *</label>{{ form.full_name }}{% if form.full_name.errors %}<div class="text-danger small">{{ form.full_name.errors.0 }}</div>{% endif %}</div>
+            <div class="col-md-4"><label class="form-label">Género</label>{{ form.genero }}</div>
+            <div class="col-md-6"><label class="form-label">Correo electrónico *</label>{{ form.email }}{% if form.email.errors %}<div class="text-danger small">{{ form.email.errors.0 }}</div>{% endif %}</div>
+            <div class="col-md-3"><label class="form-label">Fecha nacimiento</label>{{ form.date_birth }}</div>
+            <div class="col-md-3"><label class="form-label">Avatar</label>{{ form.avatar }}</div>
+          </div>
+          <h6 class="text-muted mb-3" style="font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;">Acceso al sistema</h6>
+          <div class="row g-3">
+            <div class="col-md-4"><label class="form-label">Rol *</label>{{ form.occupation }}</div>
+            <div class="col-md-4"><label class="form-label">Contraseña *</label>{{ form.password1 }}{% if form.password1.errors %}<div class="text-danger small">{{ form.password1.errors.0 }}</div>{% endif %}</div>
+            <div class="col-md-4"><label class="form-label">Confirmar contraseña *</label>{{ form.password2 }}</div>
+          </div>
+          {% if form.non_field_errors %}<div class="alert alert-danger mt-3">{{ form.non_field_errors.0 }}</div>{% endif %}
+          <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Registrar Usuario</button>
+            <a href="{% url 'users_app:user-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

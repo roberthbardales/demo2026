@@ -1,0 +1,28 @@
+{% extends 'inventario/base_inventario.html' %}
+{% block title %}Registrar Salida de Stock{% endblock %}
+{% block page_title %}Salida de Stock{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <div class="card">
+      <div class="card-header"><i class="bi bi-dash-circle me-2 text-danger"></i>Registrar Salida de Stock</div>
+      <div class="card-body">
+        <form method="post">{% csrf_token %}
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Producto *</label>{{ form.producto }}{% if form.producto.errors %}<div class="text-danger small">{{ form.producto.errors }}</div>{% endif %}</div>
+            <div class="col-md-6"><label class="form-label">Almacén *</label>{{ form.almacen }}</div>
+            <div class="col-md-6"><label class="form-label">Cantidad *</label>{{ form.cantidad }}</div>
+            <div class="col-md-6"><label class="form-label">Doc. Referencia</label>{{ form.documento_referencia }}</div>
+            <div class="col-12"><label class="form-label">Motivo</label>{{ form.motivo }}</div>
+          </div>
+          {% if form.non_field_errors %}<div class="alert alert-danger mt-3">{{ form.non_field_errors }}</div>{% endif %}
+          <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-danger"><i class="bi bi-check-lg me-1"></i>Registrar Salida</button>
+            <a href="{% url 'inventario_app:movimiento-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

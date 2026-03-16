@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block nav_usuarios %}active{% endblock %}
+
+{% block extra_css %}
+<style>
+    :root {
+        --mod-color: #6c42c0;
+        --mod-light: #f0eafa;
+    }
+    .btn-mod { background: var(--mod-color); color: #fff; border: none; }
+    .btn-mod:hover { background: #5a35a8; color: #fff; }
+    .table thead th { color: var(--mod-color) !important; }
+</style>
+{% endblock %}

@@ -1,0 +1,141 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}{{ empleado.nombre_completo }}{% endblock %}
+{% block page_title %}Ficha de Empleado{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <!-- Ficha -->
+  <div class="col-lg-3">
+    <div class="card text-center">
+      <div class="card-body">
+        {% if empleado.foto %}
+        <img src="{{ empleado.foto.url }}" class="rounded-circle mb-3" style="width:90px;height:90px;object-fit:cover;">
+        {% else %}
+        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width:90px;height:90px;">
+          <i class="bi bi-person-fill text-white" style="font-size:2.5rem;"></i>
+        </div>
+        {% endif %}
+        <h6 class="fw-bold mb-0">{{ empleado.nombre_completo }}</h6>
+        <div class="text-muted" style="font-size:.8rem;">{{ empleado.cargo.nombre }}</div>
+        <span class="badge-status estado-{{ empleado.estado }} mt-2 d-inline-block">{{ empleado.get_estado_display }}</span>
+        <hr>
+        <div class="text-start">
+          <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Código</span><code>{{ empleado.codigo }}</code></div>
+          <div class="d-flex justify-content-between mb-1"><span class="text-muted small">DNI</span><span class="small">{{ empleado.dni }}</span></div>
+          <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Depto.</span><span class="small">{{ empleado.departamento.nombre }}</span></div>
+          <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Ingreso</span><span class="small">{{ empleado.fecha_ingreso|date:"d/m/Y" }}</span></div>
+          <div class="d-flex justify-content-between mb-1"><span class="text-muted small">Sueldo</span><span class="small fw-500">S/ {{ empleado.sueldo_base }}</span></div>
+          {% if empleado.email %}<div class="d-flex justify-content-between mb-1"><span class="text-muted small">Email</span><span class="small">{{ empleado.email }}</span></div>{% endif %}
+          {% if empleado.telefono %}<div class="d-flex justify-content-between mb-1"><span class="text-muted small">Tel.</span><span class="small">{{ empleado.telefono }}</span></div>{% endif %}
+        </div>
+        <a href="{% url 'rrhh_app:empleado-editar' empleado.pk %}" class="btn btn-mod btn-sm w-100 mt-3">Editar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="col-lg-9">
+    <ul class="nav nav-tabs mb-3" id="empTabs">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#contratos">Contratos</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#asistencias">Asistencia</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#ausencias">Ausencias</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#vacs">Vacaciones</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#docs">Documentos</a></li>
+    </ul>
+    <div class="tab-content">
+      <!-- Contratos -->
+      <div class="tab-pane fade show active" id="contratos">
+        <div class="card"><div class="card-body p-0"><div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr><th>Tipo</th><th>Inicio</th><th>Fin</th><th>Sueldo</th><th>Estado</th></tr></thead>
+            <tbody>
+              {% for c in contratos %}
+              <tr>
+                <td>{{ c.get_tipo_display }}</td>
+                <td>{{ c.fecha_inicio|date:"d/m/Y" }}</td>
+                <td>{{ c.fecha_fin|date:"d/m/Y"|default:"Indefinido" }}</td>
+                <td>S/ {{ c.sueldo }}</td>
+                <td><span class="badge {% if c.estado == 'V' %}bg-success{% elif c.estado == 'X' %}bg-secondary{% else %}bg-danger{% endif %}">{{ c.get_estado_display }}</span></td>
+              </tr>
+              {% empty %}<tr><td colspan="5" class="text-center text-muted py-4">Sin contratos.</td></tr>{% endfor %}
+            </tbody>
+          </table>
+        </div></div></div>
+      </div>
+      <!-- Asistencia -->
+      <div class="tab-pane fade" id="asistencias">
+        <div class="card"><div class="card-body p-0"><div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr><th>Fecha</th><th>Entrada</th><th>Salida</th><th>Estado</th></tr></thead>
+            <tbody>
+              {% for a in asistencias %}
+              <tr>
+                <td>{{ a.fecha|date:"d/m/Y" }}</td>
+                <td>{{ a.hora_entrada|default:"—" }}</td>
+                <td>{{ a.hora_salida|default:"—" }}</td>
+                <td><span class="badge {% if a.estado == 'P' %}bg-success{% elif a.estado == 'T' %}bg-warning text-dark{% elif a.estado == 'F' %}bg-danger{% else %}bg-info{% endif %}">{{ a.get_estado_display }}</span></td>
+              </tr>
+              {% empty %}<tr><td colspan="4" class="text-center text-muted py-4">Sin registros.</td></tr>{% endfor %}
+            </tbody>
+          </table>
+        </div></div></div>
+      </div>
+      <!-- Ausencias -->
+      <div class="tab-pane fade" id="ausencias">
+        <div class="card"><div class="card-body p-0"><div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr><th>Tipo</th><th>Desde</th><th>Hasta</th><th>Días</th><th>Estado</th></tr></thead>
+            <tbody>
+              {% for a in ausencias %}
+              <tr>
+                <td>{{ a.get_tipo_display }}</td>
+                <td>{{ a.fecha_inicio|date:"d/m/Y" }}</td>
+                <td>{{ a.fecha_fin|date:"d/m/Y" }}</td>
+                <td>{{ a.dias }}</td>
+                <td><span class="badge {% if a.estado == 'A' %}bg-success{% elif a.estado == 'P' %}bg-warning text-dark{% else %}bg-danger{% endif %}">{{ a.get_estado_display }}</span></td>
+              </tr>
+              {% empty %}<tr><td colspan="5" class="text-center text-muted py-4">Sin ausencias.</td></tr>{% endfor %}
+            </tbody>
+          </table>
+        </div></div></div>
+      </div>
+      <!-- Vacaciones -->
+      <div class="tab-pane fade" id="vacs">
+        <div class="card"><div class="card-body p-0"><div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr><th>Desde</th><th>Hasta</th><th>Días</th><th>Estado</th></tr></thead>
+            <tbody>
+              {% for v in vacaciones %}
+              <tr>
+                <td>{{ v.fecha_inicio|date:"d/m/Y" }}</td>
+                <td>{{ v.fecha_fin|date:"d/m/Y" }}</td>
+                <td>{{ v.dias_solicitados }}</td>
+                <td><span class="badge {% if v.estado == 'A' %}bg-success{% elif v.estado == 'P' %}bg-warning text-dark{% elif v.estado == 'G' %}bg-info{% else %}bg-danger{% endif %}">{{ v.get_estado_display }}</span></td>
+              </tr>
+              {% empty %}<tr><td colspan="4" class="text-center text-muted py-4">Sin vacaciones.</td></tr>{% endfor %}
+            </tbody>
+          </table>
+        </div></div></div>
+      </div>
+      <!-- Documentos -->
+      <div class="tab-pane fade" id="docs">
+        <div class="card"><div class="card-body p-0"><div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead><tr><th>Tipo</th><th>Nombre</th><th>F. Emisión</th><th>F. Vencimiento</th><th></th></tr></thead>
+            <tbody>
+              {% for d in documentos %}
+              <tr>
+                <td><span class="badge bg-secondary">{{ d.get_tipo_display }}</span></td>
+                <td>{{ d.nombre }}</td>
+                <td>{{ d.fecha_emision|date:"d/m/Y"|default:"—" }}</td>
+                <td>{{ d.fecha_vencimiento|date:"d/m/Y"|default:"—" }}</td>
+                <td><a href="{{ d.archivo.url }}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i></a></td>
+              </tr>
+              {% empty %}<tr><td colspan="5" class="text-center text-muted py-4">Sin documentos.</td></tr>{% endfor %}
+            </tbody>
+          </table>
+        </div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

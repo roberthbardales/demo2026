@@ -1,0 +1,29 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Contratos{% endblock %}
+{% block page_title %}Contratos{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-file-earmark-text me-2"></i>Contratos</span>
+    <a href="{% url 'rrhh_app:contrato-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo Contrato</a>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Empleado</th><th>Tipo</th><th>Inicio</th><th>Fin</th><th>Sueldo</th><th>Estado</th><th></th></tr></thead>
+      <tbody>
+        {% for c in contratos %}
+        <tr>
+          <td><a href="{% url 'rrhh_app:empleado-detalle' c.empleado.pk %}" class="text-decoration-none">{{ c.empleado.nombre_completo }}</a></td>
+          <td>{{ c.get_tipo_display }}</td>
+          <td>{{ c.fecha_inicio|date:"d/m/Y" }}</td>
+          <td>{{ c.fecha_fin|date:"d/m/Y"|default:"Indefinido" }}</td>
+          <td>S/ {{ c.sueldo }}</td>
+          <td><span class="badge {% if c.estado == 'V' %}bg-success{% elif c.estado == 'X' %}bg-secondary{% else %}bg-danger{% endif %}">{{ c.get_estado_display }}</span></td>
+          <td><a href="{% url 'rrhh_app:contrato-editar' c.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></a></td>
+        </tr>
+        {% empty %}<tr><td colspan="7" class="text-center text-muted py-5">Sin contratos registrados.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+</div>
+{% endblock %}

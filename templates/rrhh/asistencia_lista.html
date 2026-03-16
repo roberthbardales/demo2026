@@ -1,0 +1,48 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Asistencia{% endblock %}
+{% block page_title %}Control de Asistencia{% endblock %}
+{% block content %}
+<div class="card mb-3">
+  <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <span><i class="bi bi-calendar-check me-2"></i>Asistencia</span>
+    <div class="d-flex gap-2">
+      <a href="{% url 'rrhh_app:asistencia-nueva' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Registrar</a>
+      <a href="{% url 'rrhh_app:reporte-asistencia-excel' %}" class="btn btn-outline-success btn-sm"><i class="bi bi-file-earmark-excel me-1"></i>Excel</a>
+    </div>
+  </div>
+  <div class="card-body border-bottom pb-3">
+    <form method="get" class="row g-2 align-items-end">
+      <div class="col-md-4">{{ form_filtro.empleado }}</div>
+      <div class="col-md-2"><label class="form-label" style="font-size:.8rem;">Mes</label>{{ form_filtro.mes }}</div>
+      <div class="col-md-2"><label class="form-label" style="font-size:.8rem;">Año</label>{{ form_filtro.anio }}</div>
+      <div class="col-auto"><button type="submit" class="btn btn-mod btn-sm">Filtrar</button></div>
+    </form>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Empleado</th><th>Fecha</th><th>Entrada</th><th>Salida</th><th>Estado</th><th>Observación</th></tr></thead>
+      <tbody>
+        {% for a in asistencias %}
+        <tr>
+          <td><a href="{% url 'rrhh_app:empleado-detalle' a.empleado.pk %}" class="text-decoration-none">{{ a.empleado.nombre_completo }}</a></td>
+          <td>{{ a.fecha|date:"d/m/Y" }}</td>
+          <td>{{ a.hora_entrada|default:"—" }}</td>
+          <td>{{ a.hora_salida|default:"—" }}</td>
+          <td><span class="badge {% if a.estado == 'P' %}bg-success{% elif a.estado == 'T' %}bg-warning text-dark{% elif a.estado == 'F' %}bg-danger{% else %}bg-info{% endif %}">{{ a.get_estado_display }}</span></td>
+          <td style="font-size:.82rem;">{{ a.observacion|default:"—" }}</td>
+        </tr>
+        {% empty %}<tr><td colspan="6" class="text-center text-muted py-5">Sin registros de asistencia.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+  {% if is_paginated %}
+  <div class="card-footer d-flex justify-content-center">
+    <nav><ul class="pagination pagination-sm mb-0">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">«</a></li>{% endif %}
+      <li class="page-item active"><a class="page-link" href="#">{{ page_obj.number }}/{{ page_obj.paginator.num_pages }}</a></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">»</a></li>{% endif %}
+    </ul></nav>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

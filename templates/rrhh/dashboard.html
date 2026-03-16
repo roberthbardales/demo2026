@@ -1,0 +1,111 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Dashboard RRHH{% endblock %}
+{% block page_title %}Dashboard RRHH{% endblock %}
+
+{% block content %}
+<div class="row g-3 mb-4">
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e8f1fb;color:#1e6fbf;"><i class="bi bi-people-fill"></i></div>
+            <div><div class="stat-label">Empleados Activos</div><div class="stat-value">{{ total_empleados }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#e6f7f2;color:#108260;"><i class="bi bi-diagram-3"></i></div>
+            <div><div class="stat-label">Departamentos</div><div class="stat-value">{{ total_departamentos }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#fff3cd;color:#856404;"><i class="bi bi-calendar-x"></i></div>
+            <div><div class="stat-label">Ausencias Pendientes</div><div class="stat-value">{{ ausencias_pendientes }}</div></div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon" style="background:#f0eafa;color:#6c42c0;"><i class="bi bi-umbrella"></i></div>
+            <div><div class="stat-label">Vacaciones Pendientes</div><div class="stat-value">{{ vacaciones_pendientes }}</div></div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-person-badge me-2"></i>Ingresos recientes</span>
+                <a href="{% url 'rrhh_app:empleado-lista' %}" class="btn btn-sm btn-outline-secondary">Ver todos</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead><tr><th>Empleado</th><th>Cargo</th><th>Ingreso</th></tr></thead>
+                        <tbody>
+                            {% for e in empleados_recientes %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'rrhh_app:empleado-detalle' e.pk %}" class="text-decoration-none fw-500">{{ e.nombre_completo }}</a>
+                                    <div style="font-size:.75rem;color:#888;">{{ e.codigo }}</div>
+                                </td>
+                                <td style="font-size:.85rem;">{{ e.cargo.nombre }}</td>
+                                <td style="font-size:.82rem;color:#888;">{{ e.fecha_ingreso|date:"d/m/Y" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr><td colspan="3" class="text-center text-muted py-4">Sin datos.</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-calendar-x me-2"></i>Ausencias por aprobar</span>
+                <a href="{% url 'rrhh_app:ausencia-lista' %}" class="btn btn-sm btn-outline-secondary">Ver todas</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead><tr><th>Empleado</th><th>Tipo</th><th>Desde</th><th></th></tr></thead>
+                        <tbody>
+                            {% for a in ausencias_recientes %}
+                            <tr>
+                                <td style="font-size:.85rem;">{{ a.empleado.nombre_completo }}</td>
+                                <td><span class="badge bg-warning text-dark">{{ a.get_tipo_display }}</span></td>
+                                <td style="font-size:.82rem;color:#888;">{{ a.fecha_inicio|date:"d/m/Y" }}</td>
+                                <td>
+                                    <a href="{% url 'rrhh_app:ausencia-aprobar' a.pk %}" class="btn btn-xs btn-success btn-sm" title="Aprobar"><i class="bi bi-check"></i></a>
+                                    <a href="{% url 'rrhh_app:ausencia-rechazar' a.pk %}" class="btn btn-xs btn-danger btn-sm" title="Rechazar"><i class="bi bi-x"></i></a>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr><td colspan="4" class="text-center text-muted py-4"><i class="bi bi-check-circle text-success d-block mb-1"></i>Sin pendientes.</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3 mt-1">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">Acciones rápidas</div>
+            <div class="card-body d-flex flex-wrap gap-2">
+                <a href="{% url 'rrhh_app:empleado-nuevo' %}" class="btn btn-mod"><i class="bi bi-person-plus me-1"></i>Nuevo Empleado</a>
+                <a href="{% url 'rrhh_app:asistencia-nueva' %}" class="btn btn-outline-primary"><i class="bi bi-calendar-check me-1"></i>Registrar Asistencia</a>
+                <a href="{% url 'rrhh_app:ausencia-nueva' %}" class="btn btn-outline-warning"><i class="bi bi-calendar-x me-1"></i>Registrar Ausencia</a>
+                <a href="{% url 'rrhh_app:contrato-nuevo' %}" class="btn btn-outline-secondary"><i class="bi bi-file-earmark-text me-1"></i>Nuevo Contrato</a>
+                <a href="{% url 'rrhh_app:reporte-empleados-excel' %}" class="btn btn-outline-success"><i class="bi bi-file-earmark-excel me-1"></i>Excel Empleados</a>
+                <a href="{% url 'rrhh_app:reporte-empleados-pdf' %}" class="btn btn-outline-danger"><i class="bi bi-file-earmark-pdf me-1"></i>PDF Empleados</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

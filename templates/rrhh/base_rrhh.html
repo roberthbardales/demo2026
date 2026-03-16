@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block nav_rrhh %}active{% endblock %}
+
+{% block extra_css %}
+<style>
+    :root {
+        --mod-color: #1e6fbf;
+        --mod-light: #e8f1fb;
+    }
+    .mod-badge { background: var(--mod-light); color: var(--mod-color); font-size:.72rem; padding:3px 10px; border-radius:20px; font-weight:600; text-transform:uppercase; letter-spacing:.5px; }
+    .btn-mod { background: var(--mod-color); color:#fff; border:none; }
+    .btn-mod:hover { background: #155a9e; color:#fff; }
+    .table thead th { color: var(--mod-color) !important; }
+    .breadcrumb-item a { color: var(--mod-color); text-decoration:none; }
+    .estado-A { background:#e6f7f2; color:#108260; }
+    .estado-I { background:#f0f0f0; color:#666; }
+    .estado-V { background:#fff3cd; color:#856404; }
+    .estado-L { background:#fde8e8; color:#c0392b; }
+</style>
+{% endblock %}

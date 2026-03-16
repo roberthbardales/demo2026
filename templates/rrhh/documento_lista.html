@@ -1,0 +1,28 @@
+{% extends 'rrhh/base_rrhh.html' %}
+{% block title %}Documentos{% endblock %}
+{% block page_title %}Documentos de Empleados{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-folder2-open me-2"></i>Documentos</span>
+    <a href="{% url 'rrhh_app:documento-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Subir Documento</a>
+  </div>
+  <div class="card-body p-0"><div class="table-responsive">
+    <table class="table table-hover mb-0">
+      <thead><tr><th>Empleado</th><th>Tipo</th><th>Nombre</th><th>F. Emisión</th><th>F. Vencimiento</th><th></th></tr></thead>
+      <tbody>
+        {% for d in documentos %}
+        <tr>
+          <td><a href="{% url 'rrhh_app:empleado-detalle' d.empleado.pk %}" class="text-decoration-none">{{ d.empleado.nombre_completo }}</a></td>
+          <td><span class="badge bg-secondary">{{ d.get_tipo_display }}</span></td>
+          <td>{{ d.nombre }}</td>
+          <td>{{ d.fecha_emision|date:"d/m/Y"|default:"—" }}</td>
+          <td>{% if d.fecha_vencimiento %}<span class="{% if d.fecha_vencimiento < today %}text-danger fw-500{% endif %}">{{ d.fecha_vencimiento|date:"d/m/Y" }}</span>{% else %}—{% endif %}</td>
+          <td><a href="{{ d.archivo.url }}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="bi bi-download"></i></a></td>
+        </tr>
+        {% empty %}<tr><td colspan="6" class="text-center text-muted py-5">Sin documentos.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div></div>
+</div>
+{% endblock %}

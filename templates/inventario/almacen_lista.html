@@ -1,0 +1,22 @@
+{% extends 'inventario/base_inventario.html' %}
+{% block title %}Almacenes{% endblock %}
+{% block page_title %}Almacenes{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header d-flex justify-content-between"><span><i class="bi bi-building me-2"></i>Almacenes</span><a href="{% url 'inventario_app:almacen-nuevo' %}" class="btn btn-mod btn-sm"><i class="bi bi-plus-lg me-1"></i>Nuevo</a></div>
+  <div class="card-body p-0"><div class="table-responsive"><table class="table table-hover mb-0">
+    <thead><tr><th>Nombre</th><th>Ubicación</th><th>Responsable</th><th>Estado</th><th></th></tr></thead>
+    <tbody>
+      {% for a in almacenes %}
+      <tr>
+        <td class="fw-500">{{ a.nombre }}</td>
+        <td>{{ a.ubicacion|default:"—" }}</td>
+        <td>{{ a.responsable.full_name|default:"—" }}</td>
+        <td>{% if a.activo %}<span class="badge bg-success-subtle text-success">Activo</span>{% else %}<span class="badge bg-secondary-subtle text-secondary">Inactivo</span>{% endif %}</td>
+        <td><a href="{% url 'inventario_app:almacen-editar' a.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i></a></td>
+      </tr>
+      {% empty %}<tr><td colspan="5" class="text-center text-muted py-5">Sin almacenes.</td></tr>{% endfor %}
+    </tbody>
+  </table></div></div>
+</div>
+{% endblock %}

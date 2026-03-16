@@ -1,0 +1,85 @@
+{% extends 'inventario/base_inventario.html' %}
+{% block title %}{% if form.instance.pk %}Editar{% else %}Nuevo{% endif %} Producto{% endblock %}
+{% block page_title %}{% if form.instance.pk %}Editar Producto{% else %}Nuevo Producto{% endif %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-box-seam me-2"></i>
+                {% if form.instance.pk %}Editar: {{ form.instance.nombre }}{% else %}Registrar Nuevo Producto{% endif %}
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Código *</label>
+                            {{ form.codigo }}
+                            {% if form.codigo.errors %}<div class="text-danger small">{{ form.codigo.errors }}</div>{% endif %}
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Nombre *</label>
+                            {{ form.nombre }}
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Descripción</label>
+                            {{ form.descripcion }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Categoría *</label>
+                            {{ form.categoria }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Unidad de Medida *</label>
+                            {{ form.unidad_medida }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Proveedor</label>
+                            {{ form.proveedor }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Precio Compra</label>
+                            {{ form.precio_compra }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Precio Venta</label>
+                            {{ form.precio_venta }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Stock Mínimo</label>
+                            {{ form.stock_minimo }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Stock Máximo</label>
+                            {{ form.stock_maximo }}
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Imagen</label>
+                            {{ form.imagen }}
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <div class="form-check">
+                                {{ form.activo }}
+                                <label class="form-check-label">Activo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger mt-3">{{ form.non_field_errors }}</div>
+                    {% endif %}
+
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="submit" class="btn btn-mod">
+                            <i class="bi bi-check-lg me-1"></i>Guardar
+                        </button>
+                        <a href="{% url 'inventario_app:producto-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
