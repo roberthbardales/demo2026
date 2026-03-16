@@ -59,6 +59,29 @@
         </a>
     </div>
     {% endif %}
+    {% if user.is_superuser or user.occupation == '0' or user.occupation == '4' %}
+<div class="col-md-6 col-xl-4">
+    <a href="{% url 'ventas_app:dashboard' %}" class="text-decoration-none">
+        <div class="card h-100 border-0 shadow-sm" style="border-radius:14px;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(192,57,43,0.13)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="stat-icon" style="background:#fde8e8;color:#c0392b;">
+                        <i class="bi bi-cart3"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold" style="color:#1a2e42;">Ventas</div>
+                        <div class="text-muted" style="font-size:0.8rem;">Gestion de ventas</div>
+                    </div>
+                </div>
+                <p class="text-muted mb-0" style="font-size:0.875rem;">Clientes, pedidos, facturas y boletas.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <span class="btn btn-sm" style="background:#c0392b;color:#fff;">Ir al modulo <i class="bi bi-arrow-right ms-1"></i></span>
+            </div>
+        </div>
+    </a>
+</div>
+{% endif %}
 
     {% if user.is_superuser or user.occupation == '0' %}
     <div class="col-md-6 col-xl-4">
