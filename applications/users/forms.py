@@ -106,3 +106,12 @@ class UpdatePasswordForm(CSSMixin, forms.Form):
         if p2 and p3 and p2 != p3:
             raise forms.ValidationError('Las contraseñas nuevas no coinciden.')
         return cleaned
+
+
+class UserUpdateForm(CSSMixin, forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['full_name', 'occupation', 'genero', 'date_birth', 'is_active']
+        widgets = {
+            'date_birth': forms.DateInput(attrs={'type': 'date'}),
+        }

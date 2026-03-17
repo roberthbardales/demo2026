@@ -42,4 +42,10 @@ urlpatterns = [
         name='user-reporte-pdf',
     ),
 
+    path(
+        'users/<int:pk>/editar/',
+        views.UserUpdateView.as_view(),
+        name='user-editar',
+    ),
+
 ]

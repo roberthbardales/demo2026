@@ -6,9 +6,11 @@ from django.http import HttpResponseRedirect
 from django.views.generic import View, ListView,TemplateView
 from django.views.generic.edit import FormView
 
-from .forms import UserRegisterForm, LoginForm, UpdatePasswordForm
+from .forms import UserRegisterForm, LoginForm, UpdatePasswordForm,UserUpdateForm
 from .models import User
 from .mixins import SuperusuarioMixin, UsuarioListaMixin
+from django.views.generic import View, ListView, TemplateView, UpdateView
+from django.contrib import messages
 
 #exportar pdf y excel
 import io
@@ -110,6 +112,15 @@ class UserListView(UsuarioListaMixin, ListView):
         ctx['total_empleado']   = qs.filter(occupation=User.EMPLEADO).count()
         return ctx
 
+class UserUpdateView(SuperusuarioMixin, UpdateView):
+    model = User
+    form_class = UserUpdateForm
+    template_name = 'users/user_update.html'
+    success_url = reverse_lazy('users_app:user-lista')
+
+    def form_valid(self, form):
+        messages.success(self.request, "Usuario actualizado correctamente.")
+        return super().form_valid(form)
 
 
 # ─── REPORTES ────────────────────────────────────────────

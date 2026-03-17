@@ -52,6 +52,7 @@
             <th>Rol</th>
             <th>Género</th>
             <th>Estado</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -79,6 +80,8 @@
               <span class="badge" style="background:#e8f1fb;color:#1e6fbf;">RRHH</span>
               {% elif u.occupation == '2' %}
               <span class="badge" style="background:#e6f7f2;color:#108260;">Inventario</span>
+              {% elif u.occupation == '4' %}
+              <span class="badge" style="background:#fde8e8;color:#c0392b;">Ventas</span>
               {% else %}
               <span class="badge" style="background:#fff3cd;color:#856404;">Empleado</span>
               {% endif %}
@@ -91,6 +94,11 @@
               <span class="badge bg-secondary-subtle text-secondary">Inactivo</span>
               {% endif %}
             </td>
+            <td>
+              <a href="{% url 'users_app:user-editar' u.pk %}" class="btn btn-sm btn-outline-secondary">
+                  <i class="bi bi-pencil"></i>
+              </a>
+          </td>
           </tr>
           {% empty %}
           <tr><td colspan="5" class="text-center text-muted py-5">Sin usuarios registrados.</td></tr>

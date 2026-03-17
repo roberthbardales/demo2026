@@ -1,0 +1,40 @@
+{% extends 'users/base_users.html' %}
+{% block title %}Editar Usuario{% endblock %}
+{% block page_title %}Editar Usuario{% endblock %}
+{% block content %}
+<div class="row justify-content-center"><div class="col-lg-7">
+  <div class="card">
+    <div class="card-header"><i class="bi bi-pencil me-2"></i>Editar: {{ object.full_name }}</div>
+    <div class="card-body">
+      <form method="post">{% csrf_token %}
+        <div class="row g-3">
+          <div class="col-md-8"><label class="form-label">Nombre completo</label>
+            <input type="text" name="full_name" value="{{ form.full_name.value }}" class="form-control"></div>
+          <div class="col-md-4"><label class="form-label">Rol</label>
+            {{ form.occupation }}</div>
+          <div class="col-md-4"><label class="form-label">Genero</label>
+            {{ form.genero }}</div>
+          <div class="col-md-4"><label class="form-label">Fecha nacimiento</label>
+            <input type="date" name="date_birth" value="{{ form.date_birth.value|default:'' }}" class="form-control"></div>
+          <div class="col-md-4 d-flex align-items-end">
+            <div class="form-check">{{ form.is_active }}
+              <label class="form-check-label ms-2">Activo</label>
+            </div>
+          </div>
+        </div>
+        {% if form.errors %}
+        <div class="alert alert-danger mt-3">
+          {% for field, errors in form.errors.items %}
+          <div><strong>{{ field }}:</strong> {{ errors }}</div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="d-flex gap-2 mt-4">
+          <button type="submit" class="btn btn-mod"><i class="bi bi-check-lg me-1"></i>Guardar</button>
+          <a href="{% url 'users_app:user-lista' %}" class="btn btn-outline-secondary">Cancelar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div></div>
+{% endblock %}
