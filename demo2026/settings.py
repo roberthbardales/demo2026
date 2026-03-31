@@ -44,7 +44,7 @@ SECRET_KEY = 'django-insecure-6at7#gcehuf)0l_rv_q^7co=f8yd(%2p64e$3sd^+#z7%!oj)^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['codigobase.duckdns.org', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
 
 # Application definition
